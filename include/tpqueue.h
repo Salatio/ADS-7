@@ -53,14 +53,6 @@ class TPQueue {
               throw std::string(" Empty ! ");
         }
     }
-    void print() const {
-        ITEM* temp = head;
-        while (temp) {
-            std::cout << temp->data << " ";
-            temp = temp->next;
-        }
-        std::cout << std::endl;
-    }
 
  private:
     TPQueue::ITEM* create(const T& data) {
