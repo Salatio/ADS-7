@@ -1,6 +1,7 @@
 // Copyright 2022 NNTU-CS
 #ifndef INCLUDE_TPQUEUE_H_
 #define INCLUDE_TPQUEUE_H_
+#include <string>
 
 template<typename T>
 class TPQueue {
@@ -8,6 +9,7 @@ class TPQueue {
         T data;
         ITEM* next;
     };
+
  public:
     TPQueue(): head(nullptr), tail(nullptr) {}
     ~TPQueue() {
@@ -59,6 +61,7 @@ class TPQueue {
         }
         std::cout << std::endl;
     }
+
  private:
     TPQueue::ITEM* create(const T& data) {
         ITEM* item = new ITEM;
